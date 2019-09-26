@@ -26,6 +26,7 @@ export const SiteTitle = styled.h1`
   font-weight: 700;
   font-size: 48px;
   margin-bottom: 4px;
+  color: #333;
 `
 
 export const SiteQuote = styled.span`
