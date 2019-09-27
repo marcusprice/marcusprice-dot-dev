@@ -9,7 +9,6 @@ export const AppContainer = styled.div`
 `
 export const MarketingContainer = styled.div`
   width: 768px;
-  /* border: solid gray 1px; */
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -24,7 +23,7 @@ export const SiteTitle = styled.h1`
   margin: 0; padding: 0;
   font-family: 'Montserrat';
   font-weight: 700;
-  font-size: 48px;
+  font-size: 36px;
   margin-bottom: 4px;
   color: #333;
 `
@@ -32,16 +31,17 @@ export const SiteTitle = styled.h1`
 export const SiteQuote = styled.span`
   font-family: 'Montserrat';
   font-weight: 700;
-  font-size: 24px;
+  font-size: 16px;
 `
 
 export const MarketingParagraph = styled.p`
   margin: 0; padding: 0;
-  margin-top: 16px;
+  margin-top: 8px;
+  line-height: 1.5;
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 16px;
-  color: #555;
+  color: #444;
 `
 
 export const MarketingImg = styled.div`
