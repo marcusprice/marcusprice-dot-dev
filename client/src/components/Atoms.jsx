@@ -110,10 +110,20 @@ export const SectionInro = styled.p`
 `
 
 export const CardContainer = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    padding: 16px;
+    display: block;
+  }
+
+  @media (max-width: 800px) {
+    width: 60%;
+    margin: 0 auto;
+  }
 `
 
 export const Card = styled.div`
@@ -122,6 +132,16 @@ export const Card = styled.div`
   border-radius: 15px;
   padding: 32px;
   background-color: #F0F4F8;
+  box-sizing: border-box;  
+
+  @media (max-width: 1200px) {
+    padding: 16px;
+    width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    margin-bottom: 64px;
+  }
 `
 
 export const CardImg = styled.div`
