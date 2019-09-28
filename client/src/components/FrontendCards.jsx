@@ -1,9 +1,10 @@
 import React from 'react'
-import { CardContainer, Card, CardImg, CardTitle, CardContent } from './Atoms.jsx'
+import { CardContainer, Card, CardImg, CardTitle, CardContent, CarUl, CardLi, CardLiBullet } from './Atoms.jsx'
 import dev from '../img/dev.jpeg'
 import clean from '../img/design.jpg'
 import seo from '../img/seo.jpg'
 import tech from '../img/tech.jpg'
+import checkmark from '../assets/icons/checkmark.png'
 
 const FrontendCards = () => {
   return(
@@ -12,8 +13,13 @@ const FrontendCards = () => {
         <CardImg src={clean}/>
         <CardTitle>Clean & Consistent Design Patterns</CardTitle>
         <CardContent>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec pretium vulputate sapien nec sagittis. Posuere urna nec tincidunt praesent. <br /><br /> Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu. Laoreet non curabitur gravida arcu ac tortor dignissim.
+          When developing your product, the number one thing I focus on is your target audience and how they will respond to the look and experience of your site or application. I ensure that:
         </CardContent>
+        <CarUl>
+          <CardLi><CardLiBullet src={checkmark}/>Your UI is clean & uncluttered</CardLi>
+          <CardLi><CardLiBullet src={checkmark}/>The personailty and feel of your product is fitting for your target audience</CardLi>
+          <CardLi position="bottom"><CardLiBullet src={checkmark}/>Your product is designed responsively to look great on all devices & platforms</CardLi>
+        </CarUl>
       </Card>
 
       <Card>

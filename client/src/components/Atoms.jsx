@@ -73,14 +73,16 @@ export const SectionBorder = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  height: 40%;
+  height: 50%;
   background-image: linear-gradient(141deg, #51279B, #F86A6A)
 `
 
 export const ContentContainer = styled.div`
   margin: 0 auto;
-  width: 90%;
+  width: 96%;
   z-index: 1;
+  margin-top: 32px;
+  margin-bottom: 32px;
 `
 
 export const SectionIntroContent = styled.div`
@@ -93,6 +95,7 @@ export const SectionIntroContent = styled.div`
 
 export const SectionTitle = styled.h2`
   margin: 0; padding: 0;
+  padding: 0;
   font-family: 'Montserrat', helvetica;
   font-weight: 700;
   margin-bottom: 8px;
@@ -110,43 +113,43 @@ export const SectionInro = styled.p`
 `
 
 export const CardContainer = styled.div`
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
 
   @media (max-width: 1200px) {
     padding: 16px;
-    display: block;
   }
 
   @media (max-width: 800px) {
     width: 60%;
     margin: 0 auto;
+    display: block;
   }
 `
 
 export const Card = styled.div`
-  width: 26%;
+  width: 32%;
   border: solid #BCCCDC 2px;
   border-radius: 15px;
-  padding: 32px;
+  padding: 16px;
   background-color: #F0F4F8;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 
   @media (max-width: 1200px) {
     padding: 16px;
-    width: 100%;
   }
 
   @media (max-width: 800px) {
     margin-bottom: 64px;
+    width: 100%;
   }
 `
 
 export const CardImg = styled.div`
-  width: 60%;
-  padding-top: 60%;
+  width: 40%;
+  padding-top: 40%;
   border-radius: 50%;
   background-image: url(${props => props.src});
   background-position: center center;
@@ -168,6 +171,25 @@ export const CardContent = styled.p`
   line-height: 1.5;
   margin: 0; padding: 0;
   font-family: 'Montserrat', helvetica;
-  font-size: 16px;
+  font-size: 14px;
   color: #334E68;
+`
+
+export const CarUl = styled.ul`
+  padding-left: 8px;
+  margin: 16px 0;
+  margin-bottom: 0;
+`
+
+export const CardLi = styled.li`
+  display: flex;
+  align-items: center;
+  margin-bottom: ${props => (props.position === 'bottom') ? '0' : '32px'};
+  font-family: 'Montserrat', helvetica;
+  font-size: 14px;
+  color: #334E68;
+`
+
+export const CardLiBullet = styled.img`
+  margin-right: 8px;
 `

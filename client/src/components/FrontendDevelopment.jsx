@@ -8,8 +8,8 @@ const FrontendDevelopment = () => {
       <SectionBorder />
       <ContentContainer>
         <SectionIntroContent>
-          <SectionTitle>Frontend Development</SectionTitle>
-          <SectionInro>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</SectionInro>
+          <SectionTitle>Design & Frontend Development</SectionTitle>
+          <SectionInro>The look and experience of your site or app is what shapes your user's impressions and keeps them coming back.</SectionInro>
         </SectionIntroContent>
         <FrontendCards />
       </ContentContainer>
