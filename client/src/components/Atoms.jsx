@@ -37,7 +37,7 @@ export const SiteTitle = styled.h1`
 export const SiteQuote = styled.span`
   font-family: 'Montserrat';
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
 `
 
 export const LandingParagraph = styled.p`
