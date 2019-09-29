@@ -74,15 +74,31 @@ export const SectionBorder = styled.div`
   top: 0;
   left: 0;
   height: 50%;
-  background-image: linear-gradient(141deg, #51279B, #F86A6A)
+  background-image: linear-gradient(141deg, #51279B, #F86A6A);
+
+  @media (max-width: 1023px) {
+    height: 30%;
+  }
+
+  @media (orientation: landscape) {
+    height: 50%;
+  }
 `
 
 export const ContentContainer = styled.div`
   margin: 0 auto;
-  width: 96%;
+  width: 100%;
   z-index: 1;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+
+  @media (max-width: 1023px) {
+    margin-bottom:0;
+  }
+
+  @media (max-width: 500px) {
+    margin-top: 0px;
+  }
 `
 
 export const SectionIntroContent = styled.div`
@@ -91,6 +107,12 @@ export const SectionIntroContent = styled.div`
   text-align: center;
   padding: 32px;
   padding-top: 0;
+  margin-bottom: 32px;
+
+  @media (max-width: 500px) {
+    margin-bottom: 0;
+    padding: 16px;
+  }
 `
 
 export const SectionTitle = styled.h2`
@@ -101,49 +123,64 @@ export const SectionTitle = styled.h2`
   margin-bottom: 8px;
   font-size: 30px;
   color: #F0F4F8;
+
+  @media (max-width: 500px) {
+    font-size: 22px;
+  }
 `
 
-export const SectionInro = styled.p`
+export const SectionIntro = styled.p`
   line-height: 1.5;
   margin: 0; padding: 0;
   font-family: 'Montserrat', helvetica;
   font-size: 16px;
   font-weight: 400;
   color: #F0F4F8;
+
+  @media (max-width: 500px) {
+    font-size: 16px;
+  }
 `
 
 export const CardContainer = styled.div`
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin: 0 auto;
 
-  @media (max-width: 1200px) {
-    padding: 16px;
-  }
-
-  @media (max-width: 800px) {
-    width: 60%;
+  @media (max-width: 1023px) {
+    width: 70%;
     margin: 0 auto;
     display: block;
+  }
+
+  @media (max-width: 500px) {
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  @media (min-width: 1600px) {
+    width: 70%;
   }
 `
 
 export const Card = styled.div`
-  width: 32%;
+  width: 31%;
   border: solid #BCCCDC 2px;
   border-radius: 15px;
   padding: 16px;
   background-color: #F0F4F8;
   box-sizing: border-box;
 
-  @media (max-width: 1200px) {
-    padding: 16px;
-  }
-
-  @media (max-width: 800px) {
+  @media (max-width: 1023px) {
     margin-bottom: 64px;
     width: 100%;
+  }
+
+  @media (max-width: 500px) {
+    margin-bottom: 16px;
   }
 `
 
@@ -155,14 +192,19 @@ export const CardImg = styled.div`
   background-position: center center;
   background-size: cover;
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+
+  @media (max-width: 500px) {
+    width: 60%;
+    padding-top: 60%;
+  }
 `
 
 export const CardTitle = styled.h3`
   margin: 0; padding: 0;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   font-family: 'Montserrat', helvetica;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   color: #243B53;
 `
@@ -173,6 +215,7 @@ export const CardContent = styled.p`
   font-family: 'Montserrat', helvetica;
   font-size: 14px;
   color: #334E68;
+  margin-bottom: 16px;
 `
 
 export const CarUl = styled.ul`
@@ -188,6 +231,7 @@ export const CardLi = styled.li`
   font-family: 'Montserrat', helvetica;
   font-size: 14px;
   color: #334E68;
+  font-weight: 700;
 `
 
 export const CardLiBullet = styled.img`

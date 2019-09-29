@@ -1,5 +1,5 @@
 import React from 'react'
-import { Section, SectionBorder, ContentContainer, SectionIntroContent, SectionTitle, SectionInro } from './Atoms.jsx'
+import { Section, SectionBorder, ContentContainer, SectionIntroContent, SectionTitle, SectionIntro } from './Atoms.jsx'
 import FrontendCards from './FrontendCards.jsx'
 
 const FrontendDevelopment = () => {
@@ -8,8 +8,8 @@ const FrontendDevelopment = () => {
       <SectionBorder />
       <ContentContainer>
         <SectionIntroContent>
-          <SectionTitle>Design & Frontend Development</SectionTitle>
-          <SectionInro>The look and experience of your site or app is what shapes your user's impressions and keeps them coming back.</SectionInro>
+          <SectionTitle>Frontend Development & Design</SectionTitle>
+          <SectionIntro>The look and experience of your site or app shapes your user's impressions and keeps them coming back.</SectionIntro>
         </SectionIntroContent>
         <FrontendCards />
       </ContentContainer>
