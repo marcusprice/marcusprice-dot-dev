@@ -7,8 +7,8 @@ const FrontendDevelopment = () => {
     <Section color="#F0F4F8">
       <SectionBorder />
       <ContentContainer>
-        <SectionIntroContent>
-          <SectionTitle>Frontend Development & Design</SectionTitle>
+        <SectionIntroContent align="center">
+          <SectionTitle color="#F0F4F8">Frontend Development & Design</SectionTitle>
           <SectionIntro>The look and experience of your site or app shapes your user's impressions and keeps them coming back.</SectionIntro>
         </SectionIntroContent>
         <FrontendCards />

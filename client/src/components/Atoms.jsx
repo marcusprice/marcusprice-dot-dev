@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import dev from '../img/dev.jpeg'
+import servers from '../img/servers.jpeg'
 
 export const AppContainer = styled.div`
   width: 100%; height: 100%;
@@ -104,7 +105,7 @@ export const ContentContainer = styled.div`
 export const SectionIntroContent = styled.div`
   max-width: 600px;
   margin: 0 auto;
-  text-align: center;
+  text-align: ${props => props.align};
   padding: 32px;
   padding-top: 0;
   margin-bottom: 32px;
@@ -116,13 +117,13 @@ export const SectionIntroContent = styled.div`
 `
 
 export const SectionTitle = styled.h2`
+  color: ${props => props.color};
   margin: 0; padding: 0;
   padding: 0;
   font-family: 'Montserrat', helvetica;
   font-weight: 700;
   margin-bottom: 8px;
   font-size: 30px;
-  color: #F0F4F8;
 
   @media (max-width: 500px) {
     font-size: 22px;
@@ -236,4 +237,66 @@ export const CardLi = styled.li`
 
 export const CardLiBullet = styled.img`
   margin-right: 8px;
+`
+
+export const SplitSection = styled.section`
+  width: 100%; height: 100%;
+  display: flex;
+  justify-content: space-between;
+`
+
+export const SplitContent = styled.div`
+  width: 50%;
+  background-color: #243B53;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export const SplitContentContainer = styled.div`
+  width: 90%;
+`
+
+export const SplitSectionIntroContent = styled.div`
+  margin-bottom: 32px;
+`
+
+export const SplitImg = styled.div`
+  width: 50%; height: 100%;
+  background-image: url(${servers});
+  background-size: cover;
+  background-position: center center;
+`
+
+export const SplitCardContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
+export const SplitCard = styled.div`
+  width: 48%;
+`
+
+export const SplitCardImg = styled.div`
+  width: 75px; height: 75px;
+  background: red;
+  border-radius: 50%;
+  margin-bottom: 16px;  
+`
+
+export const SplitCardTitle = styled.h3`
+  color: white;
+  font-family: 'Montserrat', helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0; padding: 0;
+  margin-bottom: 8px;
+`
+export const SplitCardContent = styled.p`
+  line-height: 1.5;
+  margin: 0; padding: 0;
+  font-family: 'Montserrat', helvetica;
+  font-size: 14px;
+  color: white;
+  /* margin-bottom: 16px; */
 `
