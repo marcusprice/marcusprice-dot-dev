@@ -1,8 +1,34 @@
 import React from 'react'
-import { ContentContainer, ContentSection, ProjectsContainer, ProjectCard, ProjectImage, ProjectInfo } from './atoms'
-import fillerImg from '../assets/img/portrait-filler.jpg'
+import { ContentContainer, ContentSection, ProjectsContainer, ProjectCard, ProjectImage, ProjectInfo, ProjectButton } from './atoms'
+import forrest from '../assets/img/forrest.jpg'
+import reddit from '../assets/img/reddit.jpg'
+import storage from '../assets/img/storage.jpg'
+import github from '../assets/icons/github.png'
+import preview from '../assets/icons/preview.png'
 
 const WebProjects = () => {
+  let projects = [
+    {
+      title: 'mywta',
+      image: forrest
+    },
+
+    {
+      title: 'Reddit Aggregator',
+      image: reddit
+    },
+
+    {
+      title: 'Cloud Storage',
+      image: storage
+    },
+
+    {
+      title: 'Portfolio of Dustin Williams',
+      image: forrest
+    }
+  ]
+
   return (
     <ContentContainer>
       <ContentSection bottom={false}>
@@ -12,33 +38,39 @@ const WebProjects = () => {
       <ContentSection bottom={true}>
         <ProjectsContainer>
           <ProjectCard>
-            <ProjectImage src={fillerImg} />
+            <ProjectImage src={forrest} />
             <ProjectInfo>
               <h3>mywta</h3>
-              Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nam at lectus urna duis. Gravida rutrum quisque non tellus orci. Tristique magna sit amet purus gravida quis.
+              <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nam at lectus urna duis. Gravida rutrum quisque non tellus orci. Tristique magna sit amet purus gravida quis.</p>
+              <ProjectButton><img src={preview} /> <span style={{marginLeft: '8px'}}>Live Example</span></ProjectButton>
+              <ProjectButton><img src={github} /> <span style={{marginLeft: '8px'}}>GitHub Repo</span></ProjectButton>
             </ProjectInfo>
           </ProjectCard>
 
           <ProjectCard>
-            <ProjectImage src={fillerImg} />
+            <ProjectImage src={reddit} />
             <ProjectInfo>
               <h3>Reddit Aggregator</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nam at lectus urna duis. Gravida rutrum quisque non tellus orci. Tristique magna sit amet purus gravida quis.</p>
+              <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nam at lectus urna duis. Gravida rutrum quisque non tellus orci. Tristique magna sit amet purus gravida quis.</p>
+              <ProjectButton><img src={preview} /> <span style={{marginLeft: '8px'}}>Live Example</span></ProjectButton>
+              <ProjectButton><img src={github} /> <span style={{marginLeft: '8px'}}>GitHub Repo</span></ProjectButton>
             </ProjectInfo>
           </ProjectCard>
 
           <ProjectCard>
-            <ProjectImage src={fillerImg} />
+            <ProjectImage src={storage} />
             <ProjectInfo>
-              <h3>mywta</h3>
-              Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nam at lectus urna duis. Gravida rutrum quisque non tellus orci. Tristique magna sit amet purus gravida quis.
+              <h3>Cloud Storage</h3>
+          Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nam at lectus urna duis. Gravida rutrum quisque non tellus orci. Tristique magna sit amet purus gravida quis.
+          <ProjectButton><img src={preview} /> <span style={{marginLeft: '8px'}}>Live Example</span></ProjectButton>
+          <ProjectButton><img src={github} /> <span style={{marginLeft: '8px'}}>GitHub Repo</span></ProjectButton>
             </ProjectInfo>
           </ProjectCard>
 
           <ProjectCard>
-            <ProjectImage src={fillerImg} />
+            <ProjectImage src={forrest} />
             <ProjectInfo>
-              <h3>mywta</h3>
+              <h3>Portfolio of Dustin Williams</h3>
               Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nam at lectus urna duis. Gravida rutrum quisque non tellus orci. Tristique magna sit amet purus gravida quis.
             </ProjectInfo>
           </ProjectCard>

@@ -1,8 +1,9 @@
 import styled, { keyframes } from 'styled-components'
 import portrait from '../assets/img/portrait-filler.jpg'
-import { fadeIn } from 'react-animations'
+import { fadeIn, fadeInUp } from 'react-animations'
 
 const fadeInAnimation = keyframes`${fadeIn}`;
+const fadeInUpAnimation = keyframes`${fadeInUp}`;
 
 export const AppContainer = styled.div`
   width: 100%;
@@ -119,27 +120,51 @@ export const ProjectsContainer = styled.div`
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 32px;
+  grid-gap: 64px;
 `
 
 export const ProjectCard = styled.div`
-
+  animation: 1s ${fadeInUpAnimation};
+background: #eee;
+-webkit-box-shadow: 0px 7px 12px 5px rgba(0,0,0,0.21);
+-moz-box-shadow: 0px 7px 12px 5px rgba(0,0,0,0.21);
+box-shadow: 0px 7px 12px 5px rgba(0,0,0,0.21);
+  border-radius: 15px;
 `
 
 export const ProjectImage = styled.img`
-  height: 300px;
   width: 100%;
+  height: 300px;
   object-fit: cover;
   display: block;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 `
 
 export const ProjectInfo = styled.div`
   width: 100%;
+  border-top: none;
+  padding: 16px;
   border: solid #aaa 1px;
   border-top: none;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding: 16px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #eee;
+`
+
+export const ProjectButton = styled.button`
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 16px auto;
+  border-radius: 10px;
+  border: none;
+  background: #333;
+  color: #fff;
+  padding: 8px 16px;
 `
