@@ -113,3 +113,33 @@ export const TechStackContainer = styled.div`
   align-items: center;
   padding-top: 32px;
 `
+
+export const ProjectsContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 32px;
+`
+
+export const ProjectCard = styled.div`
+
+`
+
+export const ProjectImage = styled.img`
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+`
+
+export const ProjectInfo = styled.div`
+  width: 100%;
+  border: solid #aaa 1px;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 16px;
+`
