@@ -29,7 +29,7 @@ export const Nav = styled.nav`
 
 export const NavLinks = styled.ul`
   margin: 0; padding: 0;
-  color: #aaa;
+  color: #999;
 `
 
 export const NavItem = styled.li`
@@ -51,7 +51,7 @@ export const NavItemRight = styled.li`
 
 export const ContentContainer = styled.div`
   width: 100%;
-  padding: 36px 0;
+  padding: 0;
   max-width: 1024px;
   margin: 0 auto;
   padding-bottom: 128px;
@@ -59,6 +59,7 @@ export const ContentContainer = styled.div`
 `
 
 export const TitleContainer = styled.div`
+  margin-top: 32px;
   width: 100%;
   display: flex;
   justify-content: space-between;

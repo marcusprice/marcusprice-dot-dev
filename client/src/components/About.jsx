@@ -7,7 +7,7 @@ const About = () => {
     <ContentContainer>
       <TitleContainer>
         <HeadingContainer>
-          <h1>I'm <span className="bold">Marcus Price</span> - a Full Stack Developer based out of Seattle, WA</h1>
+          <h2>I'm <span className="bold">Marcus Price</span> - a Full Stack Software Developer based out of Seattle, WA</h2>
         </HeadingContainer>
         <PortraitContainer>
           <PortraitHelper />

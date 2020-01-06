@@ -22,13 +22,13 @@ const Header = (props) => {
   return(
     <HeaderContainer>
       <Nav>
-        <h1>Marcus Price</h1>
+        <h1 onClick={() => {handleClick('About')}}>Marcus Price</h1>
         <NavLinks>
           <NavItem className={classHelper('About')} onClick={() => {handleClick('About')}}>About</NavItem>
           <NavItem className={classHelper('Web Projects')} onClick={() => {handleClick('Web Projects')}}>Web Projects</NavItem>
           <NavItem className={classHelper('Music/Art')} onClick={() => {handleClick('Music/Art')}}>Music &amp; Visual Art</NavItem>
           <NavItem className={classHelper('Contact')} onClick={() => {handleClick('Contact')}}>Contact</NavItem>
-          <NavItem>Resume</NavItem>
+          <NavItem><a className="resume-link" href="Marcus-Price-Resume.pdf" download>Résumé</a></NavItem>
         </NavLinks>
       </Nav>
 

@@ -28,11 +28,11 @@ h1, h2 {
 }
 
 h1 {
-  /* padding-top: 32px; */
+  cursor: pointer;
 }
 
 h2 {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 p {
@@ -57,7 +57,12 @@ p {
   margin: 0 16px;
 }
 
-a, footer div span {
+.resume-link {
+  text-decoration: none;
+  color: #999;
+}
+
+.footer-link, footer div span {
   color: #eee;
   text-decoration: none;
   display: block;
