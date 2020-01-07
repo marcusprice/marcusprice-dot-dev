@@ -8,10 +8,25 @@ import preview from '../assets/icons/preview.png'
 
 const ProjectCard = (props) => {
   let [display, setDisplay] = useState('none')
+  let mounted = true  //intially set card to mounted
 
-  setTimeout(() => {
-    setDisplay('block')
-  }, props.wait)
+  //trigger once the card is mounted
+  useEffect(() => {
+    //wait...
+    setTimeout(() => {
+      //if the card is mounted, set the display to block, thus triggering
+      //the animation
+      if(mounted) {
+        setDisplay('block')
+      }
+    }, props.wait)
+
+    //once the user navigates away from the projects, set the mounted state
+    //to false to prevent the display from being set
+    return () => {
+      mounted = false
+    }
+  }, [])  //<--this useEffect function fires only once
 
   const distributeTechnologies = () => {
     let technologies = props.techUsed.map((tech, index) => {
@@ -28,8 +43,9 @@ const ProjectCard = (props) => {
           <div>
             <h3>{props.title}</h3>
             <p className="project-paragraph">{props.description}</p>
+            <h4>Technologies Used</h4>
             <ProjectTechUsed>
-
+              {distributeTechnologies()}
             </ProjectTechUsed>
             <ProjectButtonContainer>
               <ProjectButton><img src={preview} /> <span style={{marginLeft: '8px'}}>Live Example</span></ProjectButton>

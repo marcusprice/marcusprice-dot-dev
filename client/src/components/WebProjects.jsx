@@ -11,21 +11,21 @@ const WebProjects = () => {
     {
       title: 'mywta',
       image: forrest,
-      description: 'mywta is a hiking app that is built off scraped data from the Washington Trails Asscociation. The UI is built around the Google Maps JavaScript API and users can find hikes within a certain range of their location.',
-      techUsed: ['Node.js/Express', 'React', 'Google Maps JavaScript API', 'Geolocation', 'PostgreSQL', 'Request-Promise + Cheerio (Web Scraping)']
+      description: 'mywta is a hiking app built off scraped data from the Washington Trails Asscociation. The UI is built around the Google Maps JavaScript API and users can find hikes within a certain range of their location.',
+      techUsed: ['Node.js/Express', 'React', 'Google Maps JavaScript API & Geolocation', 'PostgreSQL', 'Request-Promise + Cheerio (web scraping)']
     },
 
     {
       title: 'Reddit Aggregator',
       image: reddit,
       description: 'Reddit Aggregator collects the top reddit posts hourly so interesting posts don\'t get buried.',
-      techUsed: ['Node.js/Express', 'React', 'Google Maps JavaScript API', 'Geolocation', 'PostgreSQL', 'Request-Promise + Cheerio (Web Scraping)'],
+      techUsed: ['Node.js/Express', 'Snoowrap (Reddit API)', 'React', 'React-Bootstrap', 'cron', 'PostgreSQL', 'Mocha.js & Chai.js (testing)'],
     },
 
     {
       title: 'Cloud Storage',
       image: storage,
-      description: 'Cloud Storage is a simple file storage app where users can upload & manage their files.',
+      description: 'Much like it sounds, Cloud Storage is a file storage app where users can upload & manage their files. It\'s designed to be easily deployable on a web server.',
       techUsed: ['Node.js/Express', 'React', 'Google Maps JavaScript API', 'Geolocation', 'PostgreSQL', 'Request-Promise + Cheerio (Web Scraping)']
     },
 

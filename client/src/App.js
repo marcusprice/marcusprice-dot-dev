@@ -5,11 +5,14 @@ import About from './components/About'
 import WebProjects from './components/WebProjects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import 'react-perfect-scrollbar/dist/css/styles.css';
+import PerfectScrollbar from 'react-perfect-scrollbar'
+
 import './App.css';
 
 const App = () => {
   //state for selected section
-  let [selectedSection, setSelectedSection] = useState('About')
+  let [selectedSection, setSelectedSection] = useState('Projects')
 
   const sectionHelper = () => {
     let output
@@ -36,11 +39,13 @@ const App = () => {
   }
 
   return(
+        <PerfectScrollbar>
     <AppContainer>
-      <Header section={selectedSection} toggleSection={toggleSection}/>
-      {sectionHelper()}
-      <Footer />
+        <Header section={selectedSection} toggleSection={toggleSection}/>
+        {sectionHelper()}
+        <Footer />
     </AppContainer>
+      </PerfectScrollbar>
   )
 }
 

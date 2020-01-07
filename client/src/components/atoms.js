@@ -134,7 +134,7 @@ export const ProjectCardContainer = styled.div`
 
 export const ProjectImage = styled.img`
   width: 100%;
-  height: 300px;
+  height: 350px;
   object-fit: cover;
   display: block;
   border-top-left-radius: 15px;
@@ -144,6 +144,7 @@ export const ProjectImage = styled.img`
 
 export const ProjectInfo = styled.div`
   width: 100%;
+  height: calc(100% - 350px);
   border-top: none;
   padding: 16px;
   border-top: none;
@@ -157,18 +158,20 @@ export const ProjectInfo = styled.div`
 
 export const ProjectTechUsed = styled.ul`
   width: 100%;
-  list-style-type: none;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  margin-left: 32px;
 `
 
 export const ProjectTechItem = styled.li`
-  width: 33%;
-  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #666;
+  font-weight: 300;
 `
 
 export const ProjectButtonContainer = styled.div`
-  width: 100%;
+  margin: 0 auto;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -179,7 +182,7 @@ export const ProjectButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 64px;
+  height: 48px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
