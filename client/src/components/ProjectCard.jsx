@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import { ProjectCardContainer, ProjectImage, ProjectInfo, ProjectTechUsed, ProjectTechItem, ProjectButton, ProjectButtonContainer } from './atoms'
-import forrest from '../assets/img/forrest.jpg'
-import reddit from '../assets/img/reddit.jpg'
-import storage from '../assets/img/storage.jpg'
 import github from '../assets/icons/github.png'
 import preview from '../assets/icons/preview.png'
+import checkmark from '../assets/icons/checkmark.png'
 
 const ProjectCard = (props) => {
   let [display, setDisplay] = useState('none')
-  let mounted = true  //intially set card to mounted
 
   //trigger once the card is mounted
   useEffect(() => {
+    let mounted = true  //intially set card to mounted
     //wait...
     setTimeout(() => {
       //if the card is mounted, set the display to block, thus triggering
@@ -26,11 +24,11 @@ const ProjectCard = (props) => {
     return () => {
       mounted = false
     }
-  }, [])  //<--this useEffect function fires only once
+  }, [props.wait])  //<--this useEffect function fires only once
 
   const distributeTechnologies = () => {
     let technologies = props.techUsed.map((tech, index) => {
-      return <ProjectTechItem key={index}>{tech}</ProjectTechItem>
+      return <ProjectTechItem key={index}><img style={{marginRight: '4px'}} src={checkmark} /> {tech}</ProjectTechItem>
     })
 
     return technologies

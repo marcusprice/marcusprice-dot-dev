@@ -59,6 +59,16 @@ export const ContentContainer = styled.div`
   animation: 1s ${fadeInAnimation};
 `
 
+export const ProjectsContentContainer = styled.div`
+  width: 100%;
+  padding: 0;
+  max-width: 1024px;
+  min-height: calc(100vh + 300px);
+  margin: 0 auto;
+  padding-bottom: 128px;
+  animation: 1s ${fadeInAnimation};
+`
+
 export const TitleContainer = styled.div`
   margin-top: 32px;
   width: 100%;
@@ -120,7 +130,7 @@ export const ProjectsContainer = styled.div`
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 32px;
+  grid-gap: 64px;
 `
 
 export const ProjectCardContainer = styled.div`
@@ -134,7 +144,7 @@ export const ProjectCardContainer = styled.div`
 
 export const ProjectImage = styled.img`
   width: 100%;
-  height: 350px;
+  height: 250px;
   object-fit: cover;
   display: block;
   border-top-left-radius: 15px;
@@ -144,7 +154,7 @@ export const ProjectImage = styled.img`
 
 export const ProjectInfo = styled.div`
   width: 100%;
-  height: calc(100% - 350px);
+  height: calc(100% - 250px);
   border-top: none;
   padding: 16px;
   border-top: none;
@@ -159,7 +169,8 @@ export const ProjectInfo = styled.div`
 export const ProjectTechUsed = styled.ul`
   width: 100%;
   font-family: 'Open Sans', sans-serif;
-  margin-left: 32px;
+  margin-left: 16px;
+  text-decoration: none;
 `
 
 export const ProjectTechItem = styled.li`
@@ -167,6 +178,9 @@ export const ProjectTechItem = styled.li`
   margin-bottom: 4px;
   color: #666;
   font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 `
 
 export const ProjectButtonContainer = styled.div`
