@@ -123,13 +123,13 @@ export const ProjectsContainer = styled.div`
   grid-gap: 64px;
 `
 
-export const ProjectCard = styled.div`
+export const ProjectCardContainer = styled.div`
   animation: 1s ${fadeInUpAnimation};
-background: #eee;
--webkit-box-shadow: 0px 7px 12px 5px rgba(0,0,0,0.21);
--moz-box-shadow: 0px 7px 12px 5px rgba(0,0,0,0.21);
-box-shadow: 0px 7px 12px 5px rgba(0,0,0,0.21);
-  border-radius: 15px;
+  background: #eee;
+  -webkit-box-shadow: 0px 7px 12px 5px rgba(0,0,0,0.21);
+  -moz-box-shadow: 0px 7px 12px 5px rgba(0,0,0,0.21);
+  box-shadow: 0px 7px 12px 5px rgba(0,0,0,0.21);
+  border-radius: 15px; 
 `
 
 export const ProjectImage = styled.img`
