@@ -120,7 +120,7 @@ export const ProjectsContainer = styled.div`
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 64px;
+  grid-gap: 32px;
 `
 
 export const ProjectCardContainer = styled.div`
@@ -129,7 +129,7 @@ export const ProjectCardContainer = styled.div`
   -webkit-box-shadow: 0px 7px 12px 5px rgba(0,0,0,0.21);
   -moz-box-shadow: 0px 7px 12px 5px rgba(0,0,0,0.21);
   box-shadow: 0px 7px 12px 5px rgba(0,0,0,0.21);
-  border-radius: 15px; 
+  border-radius: 15px;
 `
 
 export const ProjectImage = styled.img`
@@ -145,11 +145,20 @@ export const ProjectInfo = styled.div`
   width: 100%;
   border-top: none;
   padding: 16px;
-  border: solid #aaa 1px;
   border-top: none;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
+
+export const ProjectButtonContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `
 
 export const ProjectButton = styled.button`
@@ -161,7 +170,7 @@ export const ProjectButton = styled.button`
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
-  margin: 16px auto;
+  margin: 16px auto 0 auto;
   border-radius: 10px;
   border: none;
   background: #333;

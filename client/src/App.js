@@ -9,7 +9,7 @@ import './App.css';
 
 const App = () => {
   //state for selected section
-  let [selectedSection, setSelectedSection] = useState('Web Projects')
+  let [selectedSection, setSelectedSection] = useState('About')
 
   const sectionHelper = () => {
     let output
@@ -17,7 +17,7 @@ const App = () => {
       case 'About':
         output = <About />
         break;
-      case 'Web Projects':
+      case 'Projects':
         output = <WebProjects />
         break;
       case 'Music/Art':

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { ProjectCardContainer, ProjectImage, ProjectInfo, ProjectButton } from './atoms'
+import React, { useState } from 'react'
+import { ProjectCardContainer, ProjectImage, ProjectInfo, ProjectButton, ProjectButtonContainer } from './atoms'
 import forrest from '../assets/img/forrest.jpg'
 import reddit from '../assets/img/reddit.jpg'
 import storage from '../assets/img/storage.jpg'
@@ -13,15 +13,31 @@ const ProjectCard = (props) => {
     setDisplay('block')
   }, props.wait)
 
+  const distributeTechnologies = () => {
+    let technologies = props.techUsed.map((tech, index) => {
+      return <li key={index}>{tech}</li>
+    })
+
+    return technologies
+  }
+
   return(
     <ProjectCardContainer style={{display: display}}>
-      <ProjectImage src={props.imageSource} />
-      <ProjectInfo>
-        <h3>{props.title}</h3>
-        <p className="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nam at lectus urna duis. Gravida rutrum quisque non tellus orci. Tristique magna sit amet purus gravida quis.</p>
-        <ProjectButton><img src={preview} /> <span style={{marginLeft: '8px'}}>Live Example</span></ProjectButton>
-        <ProjectButton><img src={github} /> <span style={{marginLeft: '8px'}}>GitHub Repo</span></ProjectButton>
-      </ProjectInfo>
+        <ProjectImage src={props.imageSource} />
+        <ProjectInfo>
+          <div>
+            <h3>{props.title}</h3>
+            <p className="project-paragraph">{props.description}</p>
+            <h4>Technologies Used:</h4>
+            <ul>
+              {distributeTechnologies()}
+            </ul>
+            <ProjectButtonContainer>
+              <ProjectButton><img src={preview} /> <span style={{marginLeft: '8px'}}>Live Example</span></ProjectButton>
+              <ProjectButton><img src={github} /> <span style={{marginLeft: '8px'}}>GitHub Repo</span></ProjectButton>
+            </ProjectButtonContainer>
+          </div>
+        </ProjectInfo>
     </ProjectCardContainer>
   )
 }
