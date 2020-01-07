@@ -139,6 +139,7 @@ export const ProjectImage = styled.img`
   display: block;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  object-position: ${props => {return (props.dustin ? 'right top' : 'center center')}};  
 `
 
 export const ProjectInfo = styled.div`
@@ -152,6 +153,18 @@ export const ProjectInfo = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+`
+
+export const ProjectTechUsed = styled.ul`
+  width: 100%;
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+`
+
+export const ProjectTechItem = styled.li`
+  width: 33%;
+  display: inline-block;
 `
 
 export const ProjectButtonContainer = styled.div`

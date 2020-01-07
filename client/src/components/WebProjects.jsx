@@ -4,6 +4,7 @@ import { ContentContainer, ContentSection, ProjectsContainer } from './atoms'
 import forrest from '../assets/img/forrest.jpg'
 import reddit from '../assets/img/reddit.jpg'
 import storage from '../assets/img/storage.jpg'
+import dustin from '../assets/img/dustin.jpg'
 
 const WebProjects = () => {
   let projects = [
@@ -30,15 +31,23 @@ const WebProjects = () => {
 
     {
       title: 'Portfolio of Dustin Williams',
-      image: forrest,
+      image: dustin,
       description: 'This is a portfolio site I built for Dustin Williams, a Seattle-based sound engineer.',
-      techUsed: ['Node.js/Express', 'React', 'Google Maps JavaScript API', 'Geolocation', 'PostgreSQL', 'Request-Promise + Cheerio (Web Scraping)']
+      techUsed: ['Node.js/Express', 'React', 'Google Maps JavaScript API', 'Geolocation', 'PostgreSQL', 'Request-Promise + Cheerio (Web Scraping)'],
+      dustin: true
     }
   ]
 
   const distributeProjects = () => {
     const items = projects.map((project, index) => {
-      return <ProjectCard key={index} imageSource={project.image} title={project.title} description={project.description} techUsed={project.techUsed} wait={index * 250} />
+      return <ProjectCard
+        key={index}
+        imageSource={project.image}
+        title={project.title}
+        description={project.description}
+        techUsed={project.techUsed}
+        dustin={project.dustin}
+        wait={index * 250} />
     })
 
     return items
