@@ -58,7 +58,7 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
-  margin-bottom: 8px;  
+  margin-bottom: 8px;
 }
 
 .selected {
@@ -81,7 +81,7 @@ p {
 }
 
 .footer-link, footer div span {
-  color: #eee;
+  color: #fff;
   text-decoration: none;
   display: block;
   margin-right: 32px;
@@ -93,6 +93,10 @@ p {
 
 .bold {
   font-weight: 700;
+}
+
+button:hover {
+  background: #555;
 }
 
 /* li:hover {

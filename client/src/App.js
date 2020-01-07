@@ -3,7 +3,7 @@ import { AppContainer } from './components/atoms'
 import Header from './components/Header'
 import About from './components/About'
 import WebProjects from './components/WebProjects'
-import MusicArt from './components/MusicArt'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 import './App.css';
 
@@ -20,8 +20,8 @@ const App = () => {
       case 'Projects':
         output = <WebProjects />
         break;
-      case 'Music/Art':
-        output = <MusicArt />
+      case 'Contact':
+        output = <Contact />
         break
       default:
         output = <About />

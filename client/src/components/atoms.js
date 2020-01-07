@@ -139,7 +139,7 @@ export const ProjectImage = styled.img`
   display: block;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  object-position: ${props => {return (props.dustin ? 'right top' : 'center center')}};  
+  object-position: ${props => {return (props.dustin ? 'right top' : 'center center')}};
 `
 
 export const ProjectInfo = styled.div`
