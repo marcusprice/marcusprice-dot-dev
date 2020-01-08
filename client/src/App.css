@@ -70,6 +70,7 @@ p {
 
 .selected {
   /* font-weight: 700; */
+  /* color: #333; */
   color: #333;
 }
 
@@ -100,15 +101,16 @@ p {
 
 .bold {
   font-weight: 700;
-  color: #333;
 }
 
 button:hover {
-  background: #555;
+  /* background: #1ABC9C; */
+  /* background: #555; */
 }
 
 a {
   text-decoration: none;
+  color: #2ECC71;
 }
 
 /* li:hover {

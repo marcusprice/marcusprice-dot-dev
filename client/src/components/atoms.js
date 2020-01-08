@@ -15,7 +15,8 @@ export const AppContainer = styled.div`
 export const HeaderContainer = styled.header`
   text-align: left;
   width: 100%;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #2ECC71;
+  /* border-bottom: 1px solid #aaa; */
   max-width: 1024px;
   margin: 0 auto;
   animation: 2s ${fadeInAnimation};
@@ -84,7 +85,7 @@ export const HeadingContainer = styled.div`
 
 export const ContentSection = styled.section`
   width: 100%;
-  border-bottom: ${props => {return (props.bottom ? 'none' : 'solid #aaa 1px')}};
+  border-bottom: ${props => {return (props.bottom ? 'none' : 'solid #2ECC71 1px')}};
   padding: 32px 0;
 `
 
@@ -172,15 +173,19 @@ export const ProjectTechUsed = styled.ul`
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 8px;
 `
 
 export const ProjectTechItem = styled.li`
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-top: 8px;
   color: #666;
   font-weight: 300;
   width: 50%;
-  display: inline-block;
+  display: flex;
   align-items: center;
   justify-content: left;
 `
@@ -191,6 +196,24 @@ export const ProjectButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+`
+
+export const CTAButton = styled.button`
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 16px 0 0 0;
+  border-radius: 10px;
+  border: none;
+  /* background: #333; */
+  background: #2ECC71;
+  color: #fff;
+  padding: 8px 16px;
 `
 
 export const ProjectButton = styled.button`
@@ -205,7 +228,8 @@ export const ProjectButton = styled.button`
   margin: 16px 0 0 0;
   border-radius: 10px;
   border: none;
-  background: #333;
-  color: #fff;
+  /* background: #333; */
+  background: #2ECC71;
+  color: #eee;
   padding: 8px 16px;
 `

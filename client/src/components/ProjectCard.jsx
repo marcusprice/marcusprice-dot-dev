@@ -28,7 +28,7 @@ const ProjectCard = (props) => {
 
   const distributeTechnologies = () => {
     let technologies = props.techUsed.map((tech, index) => {
-      return <ProjectTechItem key={index}><img style={{marginRight: '4px'}} src={checkmark} /> {tech}</ProjectTechItem>
+      return <ProjectTechItem key={index}><img style={{marginRight: '8px'}} src={checkmark} /> {tech}</ProjectTechItem>
     })
 
     return technologies
