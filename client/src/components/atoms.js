@@ -232,3 +232,12 @@ export const ProjectButton = styled.button`
   color: #eee;
   padding: 8px 16px;
 `
+
+export const ExternalLinkContainer = styled.ul`
+  list-style-type: none;
+`
+
+export const ExternalLink = styled. li`
+  display: inline-block;
+  margin-right: 64px;
+`

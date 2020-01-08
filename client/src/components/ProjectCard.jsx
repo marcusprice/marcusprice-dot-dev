@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { ProjectCardContainer, ProjectImage, ProjectInfo, ProjectTechUsed, ProjectTechItem, ProjectButton, ProjectButtonContainer } from './atoms'
-import github from '../assets/icons/github.png'
-import preview from '../assets/icons/preview.png'
-import checkmark from '../assets/icons/checkmark.png'
+import github from '../assets/icons/github-project.svg'
+import preview from '../assets/icons/preview.svg'
+import checkmark from '../assets/icons/checkmark.svg'
 
 const ProjectCard = (props) => {
   let [display, setDisplay] = useState('none')
@@ -28,7 +28,7 @@ const ProjectCard = (props) => {
 
   const distributeTechnologies = () => {
     let technologies = props.techUsed.map((tech, index) => {
-      return <ProjectTechItem key={index}><img style={{marginRight: '8px'}} src={checkmark} /> {tech}</ProjectTechItem>
+      return <ProjectTechItem key={index}><img style={{marginRight: '8px'}} src={checkmark} className="checkmark"/> {tech}</ProjectTechItem>
     })
 
     return technologies
@@ -46,8 +46,8 @@ const ProjectCard = (props) => {
               {distributeTechnologies()}
             </ProjectTechUsed>
             <ProjectButtonContainer>
-              <ProjectButton><img src={preview} /> <span style={{marginLeft: '8px'}}>Live Example</span></ProjectButton>
-              <a href={props.githubURL} target="_blank" rel="noopener noreferrer"><ProjectButton><img src={github} /> <span style={{marginLeft: '8px'}}>GitHub Repo</span></ProjectButton></a>
+              <ProjectButton><img src={preview} className="project-icon" /> <span style={{marginLeft: '8px'}}>Live Example</span></ProjectButton>
+              <a href={props.githubURL} target="_blank" rel="noopener noreferrer"><ProjectButton><img src={github} className="project-icon" /> <span style={{marginLeft: '8px'}}>GitHub Repo</span></ProjectButton></a>
             </ProjectButtonContainer>
           </div>
         </ProjectInfo>
