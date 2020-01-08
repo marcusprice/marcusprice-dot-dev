@@ -40,6 +40,7 @@ export const NavItem = styled.li`
   margin-left: 32px;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 `
 
 export const NavItemRight = styled.li`
@@ -63,9 +64,9 @@ export const ProjectsContentContainer = styled.div`
   width: 100%;
   padding: 0;
   max-width: 1024px;
-  min-height: calc(100vh + 300px);
-  margin: 0 auto;
+  min-height: calc(100vh + 128px);
   padding-bottom: 128px;
+  margin: 0 auto;
   animation: 1s ${fadeInAnimation};
 `
 
@@ -130,7 +131,7 @@ export const ProjectsContainer = styled.div`
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 64px;
+  grid-gap: 32px;
 `
 
 export const ProjectCardContainer = styled.div`
@@ -169,16 +170,17 @@ export const ProjectInfo = styled.div`
 export const ProjectTechUsed = styled.ul`
   width: 100%;
   font-family: 'Open Sans', sans-serif;
-  margin-left: 16px;
   text-decoration: none;
+  margin-bottom: 8px;
 `
 
 export const ProjectTechItem = styled.li`
   font-size: 16px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   color: #666;
   font-weight: 300;
-  display: flex;
+  width: 50%;
+  display: inline-block;
   align-items: center;
   justify-content: left;
 `
@@ -200,7 +202,7 @@ export const ProjectButton = styled.button`
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
-  margin: 16px auto 0 auto;
+  margin: 16px 0 0 0;
   border-radius: 10px;
   border: none;
   background: #333;

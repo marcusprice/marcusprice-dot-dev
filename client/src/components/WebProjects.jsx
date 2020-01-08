@@ -11,22 +11,25 @@ const WebProjects = () => {
     {
       title: 'mywta',
       image: forrest,
-      description: 'mywta is a hiking app built off scraped data from the Washington Trails Asscociation. The UI is built around the Google Maps JavaScript API and users can find hikes within a certain range of their location.',
-      techUsed: ['Node.js/Express', 'React', 'Google Maps JavaScript API & Geolocation', 'PostgreSQL', 'Request-Promise + Cheerio (web scraping)']
+      description: 'mywta is a hiking app built off scraped data from the Washington Trails Asscociation. The UI is developed around the Google Maps JavaScript API and users can find hikes within a certain range of their location.',
+      techUsed: ['Node.js/Express', 'React', 'Google Maps JS API', 'Geolocation', 'PostgreSQL', 'Request-Promise + Cheerio'],
+      githubURL: 'https://github.com/marcusprice/mywta'
     },
 
     {
       title: 'Reddit Aggregator',
       image: reddit,
-      description: 'Reddit Aggregator collects the top reddit posts hourly so interesting posts don\'t get buried.',
+      description: 'Reddit Aggregator collects the top reddit submissions of the hour so interesting posts don\'t get buried.',
       techUsed: ['Node.js/Express', 'Snoowrap (Reddit API)', 'React', 'React-Bootstrap', 'cron', 'PostgreSQL', 'Mocha.js & Chai.js (testing)'],
+      githubURL: 'https://github.com/marcusprice/reddit-aggregator'
     },
 
     {
       title: 'Cloud Storage',
       image: storage,
       description: 'Much like it sounds, Cloud Storage is a file storage app where users can upload & manage their files. It\'s designed to be easily deployable on a web server.',
-      techUsed: ['Node.js/Express', 'React', 'PostgreSQL', 'Sequelize ORM']
+      techUsed: ['Node.js/Express', 'React', 'PostgreSQL', 'Sequelize ORM'],
+      githubURL: 'https://github.com/marcusprice/cloud-storage'
     },
 
     {
@@ -34,6 +37,7 @@ const WebProjects = () => {
       image: dustin,
       description: 'This is a portfolio site I built for Dustin Williams, a Seattle-based sound engineer.',
       techUsed: ['Node.js/Express', 'React', 'Nodemailer'],
+      githubURL: 'https://github.com/marcusprice/dw-portfolio',
       dustin: true
     }
   ]
@@ -46,6 +50,7 @@ const WebProjects = () => {
         title={project.title}
         description={project.description}
         techUsed={project.techUsed}
+        githubURL={project.githubURL}
         dustin={project.dustin}
         wait={index * 250} />
     })
@@ -57,7 +62,7 @@ const WebProjects = () => {
     <ProjectsContentContainer>
       <ContentSection bottom={false}>
       <h2>Web Projects</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nam at lectus urna duis. Gravida rutrum quisque non tellus orci. Tristique magna sit amet purus gravida quis. Eu augue ut lectus arcu bibendum. Orci porta non pulvinar neque laoreet. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. </p>
+      <p>I love building secure & robust backend environments as well as minimal & user-friendly interfaces for web applications. I take pride in the work I do, please take a look.</p>
       </ContentSection>
       <ContentSection bottom={true}>
         <ProjectsContainer>

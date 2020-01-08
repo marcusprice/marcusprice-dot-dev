@@ -1,6 +1,7 @@
 import React from 'react'
-import { ContentContainer, TitleContainer, ContentSection, HeadingContainer, PortraitContainer, PortraitHelper } from './atoms'
+import { ContentContainer, TitleContainer, ContentSection, HeadingContainer, ProjectButton, PortraitContainer, PortraitHelper } from './atoms'
 import TechStack from './TechStack'
+import email from '../assets/icons/email.png'
 
 const About = () => {
   return (
@@ -8,6 +9,7 @@ const About = () => {
       <TitleContainer>
         <HeadingContainer>
           <h2>I'm <span className="bold">Marcus Price</span> - a full stack software developer based out of Seattle, WA</h2>
+          <a href="mailto:marcusprice88@gmail.com"><ProjectButton>Get in Touch</ProjectButton></a>
         </HeadingContainer>
         <PortraitContainer>
           <PortraitHelper />

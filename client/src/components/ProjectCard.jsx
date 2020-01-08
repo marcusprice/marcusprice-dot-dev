@@ -47,7 +47,7 @@ const ProjectCard = (props) => {
             </ProjectTechUsed>
             <ProjectButtonContainer>
               <ProjectButton><img src={preview} /> <span style={{marginLeft: '8px'}}>Live Example</span></ProjectButton>
-              <ProjectButton><img src={github} /> <span style={{marginLeft: '8px'}}>GitHub Repo</span></ProjectButton>
+              <a href={props.githubURL} target="_blank" rel="noopener noreferrer"><ProjectButton><img src={github} /> <span style={{marginLeft: '8px'}}>GitHub Repo</span></ProjectButton></a>
             </ProjectButtonContainer>
           </div>
         </ProjectInfo>
