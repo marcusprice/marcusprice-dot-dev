@@ -176,7 +176,6 @@ export const ProjectTechUsed = styled.ul`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-left: 8px;
 `
 
 export const ProjectTechItem = styled.li`
