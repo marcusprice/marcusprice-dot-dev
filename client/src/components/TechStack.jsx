@@ -10,12 +10,24 @@ import sequelize from '../assets/icons/sequelizejs.svg'
 const TechStack = () => {
   return(
     <TechStackContainer className="techStackContainer">
-      <img src={ubuntu} alty="tech icon" alt="ubuntu icon"/>
-      <img src={node} alty="tech icon" alt="nodejs icon"/>
-      <img src={express} alty="tech icon" alt="express icon"/>
-      <img src={react} alty="tech icon" alt="react icon"/>
-      <img src={postgresql} alty="tech icon" alt="postgresql icon"/>
-      <img src={sequelize} alty="tech icon" alt="sequelize icon"/>
+      <div>
+        <img src={ubuntu} alty="tech icon" alt="ubuntu icon"/>
+      </div>
+      <div>
+        <img src={node} alty="tech icon" alt="nodejs icon"/>
+      </div>
+      <div>
+          <img src={express} alty="tech icon" alt="express icon"/>
+      </div>
+      <div>
+          <img src={react} alty="tech icon" alt="react icon"/>
+      </div>
+      <div>
+          <img src={postgresql} alty="tech icon" alt="postgresql icon"/>
+      </div>
+      <div>
+          <img src={sequelize} alty="tech icon" alt="sequelize icon"/>
+      </div>
     </TechStackContainer>
   )
 }

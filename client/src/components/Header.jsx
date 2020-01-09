@@ -1,5 +1,6 @@
 import React from 'react'
 import { HeaderContainer, Nav, NavLinks, NavItem } from './atoms'
+import menu from '../assets/icons/menu.svg'
 
 const Header = (props) => {
   //updates section in parent component
@@ -23,6 +24,7 @@ const Header = (props) => {
     <HeaderContainer>
       <Nav>
         <h1 onClick={() => {handleClick('About')}}>Marcus Price</h1>
+        <img src={menu} alt='' />
         <NavLinks>
           <NavItem className={classHelper('About')} onClick={() => {handleClick('About')}}>About</NavItem>
           <NavItem className={classHelper('Projects')} onClick={() => {handleClick('Projects')}}>Projects</NavItem>

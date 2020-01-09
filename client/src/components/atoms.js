@@ -10,6 +10,37 @@ export const AppContainer = styled.div`
   min-height: 100%;
   margin: 0 auto;
   position: relative;
+
+  /*scrollbar styles for desktop*/
+  @media only screen and (min-width: 824px) {
+    ::-webkit-scrollbar {
+      background-color:#222;
+      width:4px;
+      border-radius:16px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background-color:#222;
+      border-radius:16px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background-color:#babac0;
+      border-radius:16px;
+      border:4px solid #666
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    ::-webkit-scrollbar-button {
+      display:none
+    }
+  }
 `
 
 export const HeaderContainer = styled.header`
@@ -36,6 +67,10 @@ export const Nav = styled.nav`
 export const NavLinks = styled.ul`
   margin: 0; padding: 0;
   color: #999;
+
+  @media (max-width: 610px) {
+    display: none;
+  }
 `
 
 export const NavItem = styled.li`
@@ -89,10 +124,21 @@ export const TitleContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
 `
 
 export const HeadingContainer = styled.div`
   width: 50%;
+
+  @media (max-width: 1024px) {
+    order: 2;
+    width: 100%;
+    margin-top: 32px;
+  }
 `
 
 export const ContentSection = styled.section`
@@ -103,6 +149,11 @@ export const ContentSection = styled.section`
 
 export const PortraitContainer = styled.div`
   width: 40%;
+
+  @media (max-width: 1024px) {
+    order: 1;
+    width: 75%;
+  }
 `
 export const PortraitHelper = styled.div`
   width: 100%;
@@ -142,6 +193,13 @@ export const TechStackContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   padding-top: 32px;
+  width: 100%;
+
+  @media (max-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+  }
 `
 
 export const ProjectsContainer = styled.div`
@@ -155,6 +213,10 @@ export const ProjectsContainer = styled.div`
     width: 512px;
     grid-template-columns: repeat(1, 1fr);
     margin: 0 auto;
+  }
+
+  @media (max-width: 610px) {
+    width: 90%;
   }
 `
 
@@ -221,6 +283,7 @@ export const ProjectButtonContainer = styled.div`
 `
 
 export const CTAButton = styled.button`
+  margin: 0 auto;
   cursor: pointer;
   display: flex;
   justify-content: center;

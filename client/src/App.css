@@ -19,6 +19,12 @@ body {
   height: 100vh;
 }
 
+nav img {
+  width: 32px;
+  height: auto;
+  display: none;
+}
+
 h1, h2, h3, h4 {
   /* font-family: 'EB Garamond', serif; */
   font-family: 'Montserrat', sans-serif;
@@ -79,8 +85,9 @@ p {
   border-radius: 50%;
 }
 
-.techStackContainer img {
-  margin: 0 16px;
+.techStackContainer div {
+  display: flex;
+  justify-content: center;
 }
 
 .resume-link {
@@ -125,4 +132,12 @@ a {
   width: 20px;
   height: auto;
   filter: invert(68%) sepia(89%) saturate(406%) hue-rotate(85deg) brightness(85%) contrast(86%);
+}
+
+@media only screen and (max-width: 610px) {
+  nav img {
+    width: 32px;
+    height: auto;
+    display: block;
+  }
 }

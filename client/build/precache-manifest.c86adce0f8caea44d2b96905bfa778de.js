@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "764ae55517600bb01f7fe8f746bc2d31",
+    "revision": "48c2d7bd798428c46f72399fe41f5961",
     "url": "/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.fa4a79a6.chunk.css"
   },
   {
-    "revision": "11c2cf84a7f1901df90a",
-    "url": "/static/css/main.5a1510ff.chunk.css"
+    "revision": "ef3439ff5fd97a33b4d7",
+    "url": "/static/css/main.e0186a6f.chunk.css"
   },
   {
     "revision": "ca4aacbe69b98aa44759",
@@ -20,12 +20,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.e83fbc13.chunk.js.LICENSE"
   },
   {
-    "revision": "11c2cf84a7f1901df90a",
-    "url": "/static/js/main.8ad65e55.chunk.js"
+    "revision": "ef3439ff5fd97a33b4d7",
+    "url": "/static/js/main.e9fd6827.chunk.js"
   },
   {
     "revision": "6b3defdcd169e5f902d5",
     "url": "/static/js/runtime-main.1dc66141.js"
+  },
+  {
+    "revision": "2f1bd03fa9a8dc42ecd87c4b08610494",
+    "url": "/static/media/bandcamp.2f1bd03f.svg"
+  },
+  {
+    "revision": "2199536be881d80f69886059151d3c73",
+    "url": "/static/media/checkmark.2199536b.svg"
   },
   {
     "revision": "58bc45545ef845f878298da4460e39cb",
@@ -40,6 +48,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/forrest.1af396c5.jpg"
   },
   {
+    "revision": "7ae60217c22eef2cab761053e6e62300",
+    "url": "/static/media/github-project.7ae60217.svg"
+  },
+  {
+    "revision": "4ba23b768fba1070bd967ff2b86ba16f",
+    "url": "/static/media/github.4ba23b76.svg"
+  },
+  {
+    "revision": "becf91f583547b7a4cbadbe7361e4073",
+    "url": "/static/media/linkedin.becf91f5.svg"
+  },
+  {
     "revision": "5c376133d6403088a87a04fcc9685674",
     "url": "/static/media/nodejs.5c376133.svg"
   },
@@ -52,6 +72,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/postgresql.96889989.svg"
   },
   {
+    "revision": "540ca603a758367b97cd7c2d97fca880",
+    "url": "/static/media/preview.540ca603.svg"
+  },
+  {
     "revision": "7038477259b6f1696308f867ce8c0a3a",
     "url": "/static/media/reactjs.70384772.svg"
   },
@@ -62,6 +86,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "76839bd6e356bd387ae53fcd506432db",
     "url": "/static/media/sequelizejs.76839bd6.svg"
+  },
+  {
+    "revision": "dc230e35429da01feb0cd882b4e625db",
+    "url": "/static/media/soundcloud.dc230e35.svg"
   },
   {
     "revision": "d33479a851c10469d0522d790f620d44",
