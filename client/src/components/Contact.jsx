@@ -19,10 +19,10 @@ const Contact = () => {
       <ContentSection bottom={true}>
         <h2>External Links</h2>
         <ExternalLinkContainer>
-          <ExternalLink><a href="https://github.com/marcusprice" target="_blank"><img src={github} /></a></ExternalLink>
-          <ExternalLink><a href="https://www.linkedin.com/in/marcus-price/" target="_blank"><img src={linkedIn} /></a></ExternalLink>
-          <ExternalLink><a href="https://soundcloud.com/marcus_price" target="_blank"><img src={soundcloud} /></a></ExternalLink>
-          <ExternalLink><a href="https://marcusprice.bandcamp.com/" target="_blank"><img src={bandcamp} /></a></ExternalLink>
+          <ExternalLink><a href="https://github.com/marcusprice" target="_blank" rel="noopener noreferrer"><img src={github} alt="github icon"/></a></ExternalLink>
+          <ExternalLink><a href="https://www.linkedin.com/in/marcus-price/" target="_blank" rel="noopener noreferrer"><img src={linkedIn} alt="linkedin icon"/></a></ExternalLink>
+          <ExternalLink><a href="https://soundcloud.com/marcus_price" target="_blank" rel="noopener noreferrer"><img src={soundcloud} alt="soundcloud icon"/></a></ExternalLink>
+          <ExternalLink><a href="https://marcusprice.bandcamp.com/" target="_blank" rel="noopener noreferrer"><img src={bandcamp} alt="bandcamp icon"/></a></ExternalLink>
         </ExternalLinkContainer>
       </ContentSection>
     </ContentContainer>

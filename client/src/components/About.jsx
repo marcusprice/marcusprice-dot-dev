@@ -1,7 +1,6 @@
 import React from 'react'
 import { ContentContainer, TitleContainer, ContentSection, HeadingContainer, CTAButton, PortraitContainer, PortraitHelper } from './atoms'
 import TechStack from './TechStack'
-import email from '../assets/icons/email.png'
 
 const About = () => {
   return (

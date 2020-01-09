@@ -292,7 +292,7 @@ export const ExternalLinkContainer = styled.ul`
   list-style-type: none;
 `
 
-export const ExternalLink = styled. li`
+export const ExternalLink = styled.li`
   display: inline-block;
   margin-right: 64px;
 `
