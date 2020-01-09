@@ -10,37 +10,6 @@ export const AppContainer = styled.div`
   min-height: 100%;
   margin: 0 auto;
   position: relative;
-
-  /*scrollbar styles for desktop*/
-  @media only screen and (min-width: 824px) {
-    ::-webkit-scrollbar {
-      background-color:#222;
-      width:4px;
-      border-radius:16px;
-    }
-
-    /* Track */
-    ::-webkit-scrollbar-track {
-      background-color:#222;
-      border-radius:16px;
-    }
-
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      background-color:#babac0;
-      border-radius:16px;
-      border:4px solid #666
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-      background: #555;
-    }
-
-    ::-webkit-scrollbar-button {
-      display:none
-    }
-  }
 `
 
 export const HeaderContainer = styled.header`
