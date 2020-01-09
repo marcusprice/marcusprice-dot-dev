@@ -12,7 +12,7 @@ const WebProjects = () => {
       title: 'mywta',
       image: forrest,
       description: 'mywta is a hiking app built off scraped data from the Washington Trails Asscociation website. The UI is developed around the Google Maps JavaScript API and users can find hikes within a certain range of their location.',
-      techUsed: ['Node.js/Express', 'React', 'Google Maps JS API', 'Geolocation', 'PostgreSQL', 'Request-Promise + Cheerio'],
+      techUsed: ['Node.js/Express', 'React', 'Google Maps JavaScript API', 'Geolocation', 'PostgreSQL', 'Request-Promise + Cheerio'],
       githubURL: 'https://github.com/marcusprice/mywta'
     },
 

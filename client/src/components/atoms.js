@@ -20,6 +20,10 @@ export const HeaderContainer = styled.header`
   max-width: 1024px;
   margin: 0 auto;
   animation: 2s ${fadeInAnimation};
+
+  @media (max-width: 1024px) {
+    width: 95%;
+  }
 `
 
 export const Nav = styled.nav`
@@ -59,6 +63,10 @@ export const ContentContainer = styled.div`
   margin: 0 auto;
   padding-bottom: 128px;
   animation: 1s ${fadeInAnimation};
+
+  @media (max-width: 1024px) {
+    width: 95%;
+  }
 `
 
 export const ProjectsContentContainer = styled.div`
@@ -69,6 +77,10 @@ export const ProjectsContentContainer = styled.div`
   padding-bottom: 128px;
   margin: 0 auto;
   animation: 1s ${fadeInAnimation};
+
+  @media (max-width: 1024px) {
+    width: 95%;
+  }
 `
 
 export const TitleContainer = styled.div`
@@ -118,12 +130,17 @@ export const FooterNav = styled.nav`
   align-items: center;
   justify-content: left;
   height: 100%;
+
+  @media (max-width: 1024px) {
+    width: 95%;
+  }
 `
 
 export const TechStackContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding-top: 32px;
 `
 
@@ -133,6 +150,12 @@ export const ProjectsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 32px;
+
+  @media (max-width: 1024px) {
+    width: 512px;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+  }
 `
 
 export const ProjectCardContainer = styled.div`
