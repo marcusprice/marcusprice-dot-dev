@@ -121,7 +121,7 @@ export const PortraitContainer = styled.div`
 
   @media (max-width: 1024px) {
     order: 1;
-    width: 75%;
+    width: 60%;
   }
 `
 export const PortraitHelper = styled.div`
