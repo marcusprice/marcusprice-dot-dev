@@ -41,8 +41,8 @@ const App = () => {
   return(
     <PerfectScrollbar>
       <AppContainer>
-          <Header section={selectedSection} toggleSection={toggleSection}/>
-          {sectionHelper()}
+          <Header section={ selectedSection } toggleSection={ toggleSection }/>
+          { sectionHelper() }
           <Footer />
       </AppContainer>
     </PerfectScrollbar>

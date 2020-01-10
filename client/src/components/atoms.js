@@ -249,6 +249,10 @@ export const ProjectButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 610px) {
+    width: 100%;
+  }
 `
 
 export const CTAButton = styled.button`

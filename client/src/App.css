@@ -26,7 +26,6 @@ nav img {
 }
 
 h1, h2, h3, h4 {
-  /* font-family: 'EB Garamond', serif; */
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #333;
@@ -44,7 +43,7 @@ h2 {
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   margin: 0;
   padding: 0;
@@ -76,8 +75,6 @@ p {
 }
 
 .selected {
-  /* font-weight: 700; */
-  /* color: #333; */
   color: #333;
 }
 
@@ -111,11 +108,6 @@ p {
   font-weight: 700;
 }
 
-button:hover {
-  /* background: #1ABC9C; */
-  /* background: #555; */
-}
-
 a {
   text-decoration: none;
   color: #2ECC71;
@@ -124,8 +116,6 @@ a {
 .project-icon {
   width: 35px;
   height: auto;
-  /* filter: invert(78%) sepia(9%) saturate(14%) hue-rotate(328deg) brightness(88%) contrast(83%); */
-  /* filter: invert(16%) sepia(10%) saturate(19%) hue-rotate(355deg) brightness(94%) contrast(86%); */
   filter: invert(100%) sepia(47%) saturate(225%) hue-rotate(227deg) brightness(114%) contrast(87%);
 }
 
