@@ -235,8 +235,8 @@ export const ProjectTechUsed = styled.ul`
 export const ProjectTechItem = styled.li`
   font-size: 16px;
   margin-top: 8px;
-  color: #666;
-  font-weight: 300;
+  color: #333;
+  font-weight: 400;
   width: 50%;
   display: flex;
   align-items: center;
@@ -267,7 +267,7 @@ export const CTAButton = styled.button`
   /* background: #333; */
   background: #2ECC71;
   color: #fff;
-  padding: 8px 16px;
+  padding: 0px 16px;
 `
 
 export const ProjectButton = styled.button`
@@ -285,7 +285,7 @@ export const ProjectButton = styled.button`
   /* background: #333; */
   background: #2ECC71;
   color: #eee;
-  padding: 8px 16px;
+  padding: 0px 16px;
 `
 
 export const ExternalLinkContainer = styled.ul`
