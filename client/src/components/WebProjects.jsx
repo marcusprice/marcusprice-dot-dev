@@ -1,10 +1,10 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
 import { ProjectsContentContainer, ContentSection, ProjectsContainer } from './atoms'
-import forrest from '../assets/img/forrest.jpg'
-import reddit from '../assets/img/reddit.jpg'
-import storage from '../assets/img/storage.jpg'
-import dustin from '../assets/img/dustin.jpg'
+import forrest from '../assets/img/forrest-min.jpg'
+import reddit from '../assets/img/reddit-min.jpg'
+import storage from '../assets/img/storage-min.jpg'
+import dustin from '../assets/img/dustin-min.jpg'
 
 const WebProjects = () => {
   let projects = [
