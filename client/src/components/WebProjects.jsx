@@ -12,7 +12,7 @@ const WebProjects = () => {
       title: 'mywta',
       image: forrest,
       description: 'mywta is a hiking app built off scraped data from the Washington Trails Asscociation website. The UI is developed around the Google Maps JavaScript API and users can find hikes within a certain range of their location.',
-      techUsed: ['Node.js/Express', 'React', 'Google Maps JS API', 'Geolocation', 'PostgreSQL', 'Request-Promise + Cheerio'],
+      techUsed: ['Node.js/Express', 'React', 'PostgreSQL', 'Google Maps JS API', 'Geolocation', 'Request-Promise'],
       githubURL: 'https://github.com/marcusprice/mywta'
     },
 
@@ -20,7 +20,7 @@ const WebProjects = () => {
       title: 'Reddit Aggregator',
       image: reddit,
       description: 'Reddit Aggregator collects the top reddit submissions of the hour so interesting posts don\'t get buried.',
-      techUsed: ['Node.js/Express', 'Snoowrap (Reddit API)', 'React', 'React-Bootstrap', 'cron', 'PostgreSQL', 'Mocha.js & Chai.js (testing)'],
+      techUsed: ['Node.js/Express', 'React', 'PostgreSQL', 'React-Bootstrap', 'Snoowrap (Reddit API)', 'cron'],
       githubURL: 'https://github.com/marcusprice/reddit-aggregator'
     },
 
@@ -28,7 +28,7 @@ const WebProjects = () => {
       title: 'Cloud Storage',
       image: storage,
       description: 'Much like it sounds, Cloud Storage is a file storage app where users can upload & manage their files. It\'s designed to be easily deployable on a web server.',
-      techUsed: ['Node.js/Express', 'React', 'PostgreSQL', 'Sequelize ORM'],
+      techUsed: ['Node.js/Express', 'React', 'PostgreSQL', 'Sequelize ORM', 'Busboy', 'Passport.js'],
       githubURL: 'https://github.com/marcusprice/cloud-storage'
     },
 
@@ -36,7 +36,7 @@ const WebProjects = () => {
       title: 'Portfolio of Dustin Williams',
       image: dustin,
       description: 'This is a portfolio site I built for Dustin Williams, a Seattle-based sound engineer.',
-      techUsed: ['Node.js/Express', 'React', 'Nodemailer'],
+      techUsed: ['Node.js/Express', 'React', 'Nodemailer', 'Styled Components', 'HTML', 'CSS'],
       githubURL: 'https://github.com/marcusprice/dw-portfolio',
       dustin: true
     }

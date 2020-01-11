@@ -35,7 +35,7 @@ export const Nav = styled.nav`
 
 export const NavLinks = styled.ul`
   margin: 0; padding: 0;
-  color: #999;
+  color: #aaa;
 
   @media (max-width: 610px) {
     display: none;
@@ -176,7 +176,7 @@ export const ProjectsContainer = styled.div`
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 32px;
+  grid-gap: 64px;
 
   @media (max-width: 1024px) {
     width: 512px;
@@ -224,7 +224,6 @@ export const ProjectInfo = styled.div`
 
 export const ProjectTechUsed = styled.ul`
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   margin-bottom: 8px;
   display: flex;
@@ -233,7 +232,7 @@ export const ProjectTechUsed = styled.ul`
 `
 
 export const ProjectTechItem = styled.li`
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 8px;
   color: #333;
   font-weight: 400;
@@ -241,11 +240,12 @@ export const ProjectTechItem = styled.li`
   display: flex;
   align-items: center;
   justify-content: left;
+  font-family: 'Roboto Mono', monospace;
 `
 
 export const ProjectButtonContainer = styled.div`
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;

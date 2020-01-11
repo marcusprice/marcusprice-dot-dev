@@ -26,7 +26,8 @@ nav img {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   color: #333;
 }
@@ -34,12 +35,14 @@ h1, h2, h3, h4 {
 h1 {
   cursor: pointer;
   font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
   margin-bottom: 16px;
   font-size: 20px;
   line-height: 1.5;
+  font-family: 'Roboto Mono', monospace;
 }
 
 h3 {
@@ -120,7 +123,7 @@ a {
 }
 
 .checkmark {
-  width: 20px;
+  width: 32px;
   height: auto;
   filter: invert(68%) sepia(89%) saturate(406%) hue-rotate(85deg) brightness(85%) contrast(86%);
 }

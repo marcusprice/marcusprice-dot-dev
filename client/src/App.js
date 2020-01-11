@@ -20,7 +20,7 @@ const App = () => {
       case 'About':
         output = <About />
         break;
-      case 'Projects':
+      case 'Web Projects':
         output = <WebProjects />
         break;
       case 'Contact':
@@ -35,6 +35,7 @@ const App = () => {
   }
 
   const toggleSection = (section) => {
+    document.title = 'Marcus Price - ' + section
     setSelectedSection(section)
   }
 

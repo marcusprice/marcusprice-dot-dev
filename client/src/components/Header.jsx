@@ -27,7 +27,7 @@ const Header = (props) => {
         <img src={menu} alt='' />
         <NavLinks>
           <NavItem className={classHelper('About')} onClick={() => {handleClick('About')}}>About</NavItem>
-          <NavItem className={classHelper('Projects')} onClick={() => {handleClick('Projects')}}>Projects</NavItem>
+          <NavItem className={classHelper('Web Projects')} onClick={() => {handleClick('Web Projects')}}>Web Projects</NavItem>
           <NavItem className={classHelper('Contact')} onClick={() => {handleClick('Contact')}}>Contact</NavItem>
           <NavItem><a className="resume-link" href="Marcus-Price-Resume.pdf" download>Résumé</a></NavItem>
         </NavLinks>
