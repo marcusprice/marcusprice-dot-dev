@@ -167,7 +167,7 @@ export const TechStackContainer = styled.div`
   @media (max-width: 1024px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 32px;
+    grid-gap: 64px;
   }
 `
 

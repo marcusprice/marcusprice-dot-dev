@@ -62,7 +62,7 @@ const WebProjects = () => {
     <ProjectsContentContainer>
       <ContentSection bottom={false}>
       <h2>Web Projects</h2>
-      <p>I love building secure & robust backend environments as well as minimal & user-friendly interfaces for web applications. I take pride in the work I do, please take a look.</p>
+      <p>I love building robust & secure backend environments as well as minimal & user-friendly interfaces for web applications. I take pride in the work I do, please take a look.</p>
       </ContentSection>
       <ContentSection bottom={true}>
         <ProjectsContainer>
