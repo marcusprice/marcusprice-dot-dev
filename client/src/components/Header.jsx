@@ -7,6 +7,7 @@ const Header = (props) => {
 
   //updates section in parent component
   const handleClick = (item) => {
+    setMobileToggled(false)
     props.toggleSection(item)
   }
 

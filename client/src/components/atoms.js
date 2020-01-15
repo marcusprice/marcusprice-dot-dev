@@ -46,8 +46,7 @@ export const NavLinks = styled.ul`
     overflow: hidden;
     background: #fff;
     text-align: right;
-    transition: height 2s;
-    max-height: ${props => {return (props.mobileToggled ? '500px' : '0px')}};
+    max-height: ${props => {return (props.mobileToggled ? '180px' : '0px')}};
   }
 `
 
