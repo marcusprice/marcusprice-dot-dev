@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { HeaderContainer, Nav, NavLinks, NavItem } from './atoms'
 import menu from '../assets/icons/menu.svg'
 
 const Header = (props) => {
+  let [mobileToggled, setMobileToggled] = useState(false)
+
   //updates section in parent component
   const handleClick = (item) => {
     props.toggleSection(item)
@@ -24,8 +26,8 @@ const Header = (props) => {
     <HeaderContainer>
       <Nav>
         <h1 onClick={() => {handleClick('About')}}>Marcus Price</h1>
-        <img src={menu} alt='' />
-        <NavLinks>
+        <img src={menu} alt='' onClick={() => {setMobileToggled(!mobileToggled)}}/>
+        <NavLinks mobileToggled={mobileToggled} >
           <NavItem className={classHelper('About')} onClick={() => {handleClick('About')}}>About</NavItem>
           <NavItem className={classHelper('Web Projects')} onClick={() => {handleClick('Web Projects')}}>Web Projects</NavItem>
           <NavItem className={classHelper('Contact')} onClick={() => {handleClick('Contact')}}>Contact</NavItem>

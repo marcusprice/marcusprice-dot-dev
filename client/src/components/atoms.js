@@ -31,6 +31,7 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 `
 
 export const NavLinks = styled.ul`
@@ -38,7 +39,15 @@ export const NavLinks = styled.ul`
   color: #aaa;
 
   @media (max-width: 610px) {
-    display: none;
+    width: 100%;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    overflow: hidden;
+    background: #fff;
+    text-align: right;
+    transition: height 2s;
+    max-height: ${props => {return (props.mobileToggled ? '500px' : '0px')}};
   }
 `
 
@@ -50,6 +59,12 @@ export const NavItem = styled.li`
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+
+  @media (max-width: 610px) {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
 `
 
 export const NavItemRight = styled.li`
