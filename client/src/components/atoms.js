@@ -199,7 +199,7 @@ export const ProjectsContainer = styled.div`
   }
 
   @media (max-width: 610px) {
-    width: 90%;
+    width: 95%;
   }
 `
 
@@ -255,6 +255,10 @@ export const ProjectTechItem = styled.li`
   align-items: center;
   justify-content: left;
   font-family: 'Roboto Mono', monospace;
+
+  @media (max-width: 610px) {
+    font-size: 12px;
+  }
 `
 
 export const ProjectButtonContainer = styled.div`
@@ -266,6 +270,7 @@ export const ProjectButtonContainer = styled.div`
 
   @media (max-width: 610px) {
     width: 100%;
+    display: block;
   }
 `
 
@@ -304,6 +309,11 @@ export const ProjectButton = styled.button`
   background: #2ECC71;
   color: #eee;
   padding: 0px 16px;
+
+  @media (max-width: 610px) {
+    margin: 0 auto;
+    margin-top: 16px;
+  }
 `
 
 export const ExternalLinkContainer = styled.ul`
