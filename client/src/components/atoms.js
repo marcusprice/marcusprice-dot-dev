@@ -255,6 +255,10 @@ export const ProjectTechItem = styled.li`
   align-items: center;
   justify-content: left;
   font-family: 'Roboto Mono', monospace;
+
+  @media (max-width: 610px) {
+    font-size: 12px;
+  }
 `
 
 export const ProjectButtonContainer = styled.div`
