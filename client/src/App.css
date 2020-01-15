@@ -134,4 +134,8 @@ a {
     height: auto;
     display: block;
   }
+
+  .project-paragraph  {
+    font-size: 14px;
+  }
 }
