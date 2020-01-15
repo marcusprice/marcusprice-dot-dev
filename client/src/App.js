@@ -12,7 +12,7 @@ import './App.css';
 
 const App = () => {
   //state for selected section
-  let [selectedSection, setSelectedSection] = useState('About')
+  let [selectedSection, setSelectedSection] = useState('Web Projects')
 
   const sectionHelper = () => {
     let output

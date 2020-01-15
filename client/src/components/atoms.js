@@ -199,7 +199,7 @@ export const ProjectsContainer = styled.div`
   }
 
   @media (max-width: 610px) {
-    width: 90%;
+    width: 95%;
   }
 `
 
@@ -266,6 +266,7 @@ export const ProjectButtonContainer = styled.div`
 
   @media (max-width: 610px) {
     width: 100%;
+    display: block;
   }
 `
 
@@ -304,6 +305,11 @@ export const ProjectButton = styled.button`
   background: #2ECC71;
   color: #eee;
   padding: 0px 16px;
+
+  @media (max-width: 610px) {
+    margin: 0 auto;
+    margin-top: 16px;
+  }
 `
 
 export const ExternalLinkContainer = styled.ul`
