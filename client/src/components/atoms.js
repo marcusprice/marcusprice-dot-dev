@@ -167,6 +167,7 @@ export const FooterNav = styled.nav`
 
   @media (max-width: 1024px) {
     width: 95%;
+    justify-content: center;
   }
 `
 
@@ -291,6 +292,10 @@ export const CTAButton = styled.button`
   background: #2ECC71;
   color: #fff;
   padding: 0px 16px;
+
+  @media (max-width: 610px) {
+    margin: 0 auto;
+  }
 `
 
 export const ProjectButton = styled.button`
@@ -318,9 +323,18 @@ export const ProjectButton = styled.button`
 
 export const ExternalLinkContainer = styled.ul`
   list-style-type: none;
+
+  @media (max-width: 610px) {
+    display: flex;
+    justify-content: space-between;
+  }
 `
 
 export const ExternalLink = styled.li`
   display: inline-block;
   margin-right: 64px;
+
+  @media (max-width: 610px) {
+    margin-right: 0;
+  }
 `
