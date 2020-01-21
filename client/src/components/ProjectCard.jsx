@@ -46,7 +46,7 @@ const ProjectCard = (props) => {
               {distributeTechnologies()}
             </ProjectTechUsed>
             <ProjectButtonContainer>
-              <ProjectButton><img src={preview} className="project-icon" alt="eyeball"/> <span style={{marginLeft: '8px'}}>Live Example</span></ProjectButton>
+              <a href={props.previewURL} target="_blank" rel="noopener noreferrer"><ProjectButton><img src={preview} className="project-icon" alt="eyeball"/> <span style={{marginLeft: '8px'}}>Live Example</span></ProjectButton></a>
               <a href={props.githubURL} target="_blank" rel="noopener noreferrer"><ProjectButton><img src={github} className="project-icon" alt="github icon"/> <span style={{marginLeft: '8px'}}>GitHub Repo</span></ProjectButton></a>
             </ProjectButtonContainer>
           </div>

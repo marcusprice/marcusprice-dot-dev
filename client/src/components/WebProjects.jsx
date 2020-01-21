@@ -11,16 +11,18 @@ const WebProjects = () => {
     {
       title: 'mywta',
       image: forrest,
-      description: 'mywta is a hiking app built off scraped data from the Washington Trails Asscociation website. The UI is developed around the Google Maps JavaScript API and users can find hikes within a certain range of their location.',
+      description: 'mywta is a hiking app built off scraped data from the Washington Trails Asscociation website. The UI is developed around the Google Maps JavaScript API and users can find hikes within a certain range of their location. I built this application because I noticed that the Washington Trails Association has no api for their hike data and I was interested in learning more about web scraping.',
       techUsed: ['Node.js/Express', 'React', 'PostgreSQL', 'Google Maps JS API', 'Geolocation', 'Request-Promise'],
+      previewURL: 'https://example.com',
       githubURL: 'https://github.com/marcusprice/mywta'
     },
 
     {
       title: 'Reddit Aggregator',
       image: reddit,
-      description: 'Reddit Aggregator collects the top reddit submissions of the hour so interesting posts don\'t get buried.',
+      description: 'Reddit Aggregator collects the top reddit submissions of the hour so interesting posts don\'t get buried. It was developed for my capstone project class and I used it as an opportunity to become more accustomed to asynchronous JavaScript, automated processes with cron, test driven development, and integrating 3rd party REST api\'s into an application.',
       techUsed: ['Node.js/Express', 'React', 'PostgreSQL', 'React-Bootstrap', 'Snoowrap (Reddit API)', 'cron'],
+      previewURL: 'https://marcusprice-reddit-aggregator.glitch.me',
       githubURL: 'https://github.com/marcusprice/reddit-aggregator'
     },
 
@@ -29,14 +31,16 @@ const WebProjects = () => {
       image: storage,
       description: 'Much like it sounds, Cloud Storage is a file storage app where users can upload & manage their files. It\'s designed to be easily deployable on a web server.',
       techUsed: ['Node.js/Express', 'React', 'PostgreSQL', 'Sequelize ORM', 'Busboy', 'Passport.js'],
+      previewURL: 'https://example.com',
       githubURL: 'https://github.com/marcusprice/cloud-storage'
     },
 
     {
       title: 'Portfolio of Dustin Williams',
       image: dustin,
-      description: 'This is a portfolio site I built for Dustin Williams, a Seattle-based sound engineer.',
-      techUsed: ['Node.js/Express', 'React', 'Nodemailer', 'Styled Components', 'HTML', 'CSS'],
+      description: 'This is a portfolio site I built for Dustin Williams, a Seattle-based sound engineer. After learning Wordpress, I started looking for a good CMS solution for SPA-type applications and found Strapi, an open source headless CMS.',
+      techUsed: ['Strapi', 'React', 'Nodemailer', 'Styled Components', 'HTML', 'CSS'],
+      previewURL: 'https://marcusprice-dw-portfolio.glitch.me',
       githubURL: 'https://github.com/marcusprice/dw-portfolio',
       dustin: true
     }
@@ -50,6 +54,7 @@ const WebProjects = () => {
         title={project.title}
         description={project.description}
         techUsed={project.techUsed}
+        previewURL={project.previewURL}
         githubURL={project.githubURL}
         dustin={project.dustin}
         wait={index * 250} />
