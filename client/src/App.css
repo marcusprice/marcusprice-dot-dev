@@ -43,7 +43,7 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   font-size: 20px;
   line-height: 1.5;
   font-family: 'Roboto Mono', monospace;
@@ -97,7 +97,7 @@ p {
 
 .resume-link {
   text-decoration: none;
-  color: #999;
+  color: #aaa;
 }
 
 .footer-link, footer div span {
