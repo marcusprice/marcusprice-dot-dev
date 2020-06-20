@@ -5,8 +5,6 @@ import About from './components/About'
 import WebProjects from './components/WebProjects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-// import 'react-perfect-scrollbar/dist/css/styles.css';
-// import PerfectScrollbar from 'react-perfect-scrollbar'
 
 import './App.css';
 

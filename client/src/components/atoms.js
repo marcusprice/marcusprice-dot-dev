@@ -235,6 +235,7 @@ export const ProjectInfo = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  white-space: pre-wrap;
 `
 
 export const ProjectTechUsed = styled.ul`

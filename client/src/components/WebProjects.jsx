@@ -11,16 +11,16 @@ const WebProjects = () => {
     {
       title: 'mywta',
       image: forrest,
-      description: 'mywta is a hiking app built off scraped data from the Washington Trails Asscociation website. The UI is developed around the Google Maps JavaScript API and users can find hikes within a certain range of their location. I built this application because I noticed that the Washington Trails Association has no api for their hike data and I was interested in learning more about web scraping.',
-      techUsed: ['Node.js/Express', 'React', 'PostgreSQL', 'Google Maps JS API', 'Geolocation', 'Request-Promise'],
-      previewURL: 'https://marcusprice.github.io/coming-soon-template/',
+      description: 'mywta is a trail finder application and api built off scraped data from the Washington Trails Asscociation (WTA) website. The UI is developed around the Google Maps JavaScript api and users can find hikes within a chosen range of their location. \n\nI built this application because the WTA website is somewhat clunky in terms of user experience. I also noticed that the WTA has no api for their trail data and I was interested in learning more about web scraping.',
+      techUsed: ['Node.js/Express', 'React', 'PostgreSQL', 'Google Maps JS API', 'Geolocation', 'Cheerio'],
+      previewURL: 'https://mywta.glitch.me',
       githubURL: 'https://github.com/marcusprice/mywta'
     },
 
     {
       title: 'Reddit Aggregator',
       image: reddit,
-      description: 'Reddit Aggregator collects the top reddit submissions of the hour so interesting posts don\'t get buried. It was developed for my capstone project class and I used it as an opportunity to become more accustomed to asynchronous JavaScript, automated processes with cron, test driven development, and integrating 3rd party REST api\'s into an application.',
+      description: 'Reddit Aggregator is an application that collects the top hourly posts of your favorite subreddits on reddit. It uses a combination of cron, the snoowrap reddit api & PostgreSQL to collect and save the top reddit submissions each hour.\n \nI realized that a lot of great reddit submissions get buried throughout the day, so for my capstone project class I took the opportunity to mitigate this problem.',
       techUsed: ['Node.js/Express', 'React', 'PostgreSQL', 'React-Bootstrap', 'Snoowrap (Reddit API)', 'cron'],
       previewURL: 'https://marcusprice.github.io/coming-soon-template/',
       githubURL: 'https://github.com/marcusprice/reddit-aggregator'
@@ -67,7 +67,7 @@ const WebProjects = () => {
     <ProjectsContentContainer>
       <ContentSection bottom={false}>
       <h2>Web Projects</h2>
-      <p>I love building robust & secure backend environments as well as minimal & user-friendly interfaces for web applications. I take pride in the work I do, please take a look.</p>
+      <p>I love building clean and minimal web applications that are effective in solving complicated problems. Here are some applications I've built.</p>
       </ContentSection>
       <ContentSection bottom={true}>
         <ProjectsContainer>
